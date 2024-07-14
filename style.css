@@ -1,0 +1,53 @@
+body {
+  background: radial-gradient(
+    at left top,
+    rgb(245, 208, 254),
+    rgb(255, 255, 255),
+    rgb(167, 139, 250)
+  );
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.section-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.social-logo {
+  font-size: 20px;
+  color: #626262;
+  transition: 0.3s;
+}
+.social-logo:hover {
+  color: #4d6edd;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
