@@ -27,9 +27,16 @@
     <div class="container py-5">
       <div class="row justify-content-center">
         <div class="col-md-5">
-          <img src="images/guntur.jpg" alt="" class="profile-image" />
-          <h4 class="text-dark text-center mt-3">Guntur Alamsyah Putra</h4>
-          <p class="text-secondary text-center">Freelance Web Developer</p>
+          <img
+            src="images/guntur.jpg"
+            alt=""
+            class="profile-image"
+            style="box-shadow: 2px 2px 20px #4f6c98"
+          />
+          <h4 class="text-dark text-center mt-3">
+            <code style="color: #c9d1d9">Guntur Alamsyah Putra</code>
+          </h4>
+          <p class="text-secondary text-center mt-3">FrontEnd Web Developer</p>
           <div
             class="d-flex align-items-center justify-content-center gap-3 mt-3 mb-5"
           >
@@ -59,21 +66,221 @@
             class="img-fluid rounded mb-3 section-image"
           />
 
-          <h6 class="text-secondary text-uppercase">Informasi Terbaru</h6>
+          <div class="card-container">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">personal.tsx</h5>
+                <div class="card-text scrollable mt-3">
+                  <code style="font-size: 20px">
+                    <span class="Dark-Orchid">const</span>
+                    <span class="Light-Sky-Blue">NAME</span>
+                    <span class="Lavender">=</span>
+                    <span class="Lavender-text-string"
+                      >'Guntur Alamsyah Putra';</span
+                    ><br /><br />
+                    <span class="error">let</span>
+                    <span class="Light-Sky-Blue">location</span>
+                    <span class="Lavender">=</span>
+                    <span class="Lavender-text-string"
+                      >'Kab Bogor, Indonesia';</span
+                    ><br /><br />
+                    <span class="error">let</span>
+                    <span class="Light-Sky-Blue">hobbies</span>
+                    <span class="Lavender">=</span>
+                    <span class="number">[</span> <br />
+                    <span class="Lavender-text-string"
+                      >'Programming', <br />
+                      'Gaming',<br />
+                      'Eating',<br />
+                      'Basketball',<br
+                    /></span>
+
+                    <span class="comment">// 'Sleeping'</span> <br />
+                    <span class="number">]</span><span class="Lavender">;</span>
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <!-- gear -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">gear.tsx</h5>
+                <div class="card-text scrollable mt-3">
+                  <code style="font-size: large">
+                    <!-- Hardware -->
+                    <span class="Dark-Orchid">const</span>
+                    <span class="Light-Sky-Blue">hardware</span>
+                    <span class="Lavender">=</span> {<br />
+                    <span style="margin-left: 20px" class="Medium-Sea-Green"
+                      >computers:</span
+                    >
+                    <span class="number">[</span><br />
+                    <span class="spasi-kurawal">{</span><br />
+                    <span class="spasi Medium-Sea-Green">name:</span>
+                    <span class="Lavender-text-string"
+                      >'HP Pavilion Laptop 13-an0xxx',</span
+                    ><br /><br />
+                    <span class="spasi Medium-Sea-Green">desc:</span>
+                    <span class="Lavender-text-string"
+                      >'The first computer that</span
+                    >
+                    <br />
+                    <span class="spasi"
+                      ><span
+                        style="margin-left: 68px"
+                        class="Lavender-text-string"
+                        >i used to work outside.',</span
+                      > </span
+                    ><br /><br />
+                    <span class="spasi Medium-Sea-Green">tags:</span>
+                    <span class="number">[</span
+                    ><span class="Lavender-text-string">'Laptop'</span
+                    ><span class="number">]</span>
+                    <br />
+                    <span class="spasi-kurawal"> }</span> <br />
+                    <span class="spasi-kotak number">]</span
+                    ><span class="Lavender">,</span> <br /><span>}</span
+                    ><br /><br />
+                    <!-- Software -->
+                    <span class="Dark-Orchid">const</span>
+                    <span class="Light-Sky-Blue">software</span>
+                    <span class="Lavender">=</span> {<br />
+                    <span style="margin-left: 20px" class="Medium-Sea-Green"
+                      >tools:</span
+                    >
+                    <span class="number">[</span><br />
+                    <span class="spasi-kurawal">{</span><br />
+                    <span class="spasi Medium-Sea-Green">name:</span>
+                    <span class="Lavender-text-string">'Vs Code',</span
+                    ><br /><br />
+                    <span class="spasi Medium-Sea-Green">desc:</span>
+                    <span class="Lavender-text-string"
+                      >'My main editor, I use it for everything. I use it for
+                      writing code,</span
+                    >
+                    <br />
+                    <span
+                      style="margin-left: 110px"
+                      class="Lavender-text-string"
+                      >writing notes, writing this page, and even writing this
+                      list.',</span
+                    >
+                    <br /><br />
+                    <span class="spasi Medium-Sea-Green">tags:</span>
+                    <span class="number">[</span
+                    ><span class="Lavender-text-string">'Editors'</span
+                    ><span class="number">]</span>
+                    <br />
+                    <span class="spasi-kurawal"> }</span> <br />
+                    <span class="spasi-kotak number">]</span
+                    ><span class="Lavender">,</span> <br />
+                    }
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <!-- Work -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">work.tsx</h5>
+                <div class="card-text scrollable mt-3">
+                  <code style="font-size: large">
+                    <span class="comment">// Work Information const</span
+                    ><br /><br />
+                    <span class="Dark-Orchid">const</span>
+                    <span class="Light-Sky-Blue">PROFESSION</span>
+                    <span class="Lavender">=</span>
+                    <span class="Lavender-text-string"
+                      >'Front End Developer'</span
+                    ><br /><br />
+                    <span class="error">let</span>
+                    <span class="Light-Sky-Blue">employer</span>
+                    <span class="Lavender">=</span> <span class="number">[</span
+                    ><br />
+                    <span class="comment">// Full time, Internship</span><br />
+                    <span class="Lavender-text-string"
+                      >'PT. Kredit Pintar Indonesia',</span
+                    ><br />
+                    <span class="number">]</span><br /><br />
+                    <span class="comment">// Most important skills</span><br />
+                    <span class="error">let</span>
+                    <span class="Light-Sky-Blue">languages</span>
+                    <span class="Lavender">=</span> <span class="number">[</span
+                    ><br />
+                    <span class="Lavender-text-string"
+                      >'HTML5', 'CSS3', 'JavaScript', 'TypeScript',</span
+                    ><br />
+                    <span class="number"> ]</span><br /><br />
+                    <span class="comment">// Frameworks</span><br />
+                    <span class="error">let</span>
+                    <span class="Light-Sky-Blue">frameworks</span>
+                    <span class="Lavender">=</span> <span class="number">[</span
+                    ><br />
+                    <span class="Lavender-text-string"
+                      >'React', 'Next.Js', 'Tailwind CSS', 'Svelte',</span
+                    ><br />
+                    <span class="comment">// still learning this...</span>
+                    <br />
+                    <span class="number">]</span><br /><br />
+                    <span class="Medium-Sea-Green"
+                      >Work <span class="function">|</span> Guntur alamsyah
+                      putra;</span
+                    >
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 class="text-secondary text-uppercase mt-4">Informasi Terbaru</h6>
           <a
             href="https://github.com/Cramouchegit"
             class="btn btn-primary w-100 py-2 px-3 text-start mb-2"
-            >Link Github Saya</a
           >
-          <a href="#" class="btn btn-primary w-100 py-2 px-3 text-start mb-2"
-            >Link Portfolio Saya</a
+            My Github</a
           >
-          <h6 class="text-secondary text-uppercase mt-3">Link Terkait</h6>
+          <a
+            href="https://portfolio-guntur.vercel.app"
+            class="btn btn-secondary w-100 py-2 px-3 text-start mb-2"
+            >My Portfolio
+          </a>
+          <h6 class="text-secondary text-uppercase mt-3">
+            Link Website Terkait
+          </h6>
           <a
             href="https://www.instagram.com/wanderrerss/"
-            class="btn btn-light w-100 py-2 px-3 text-start mb-2"
-            >Link Instagram Saya</a
+            class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
           >
+            Instagram</a
+          >
+          <a
+            href="https://github.com/Cramouchegit/website-store-mabuchi"
+            class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
+            >Toko Saya
+            <span style="font-variant: small-caps">(Dummy data)</span></a
+          >
+          <a
+            href="https://github.com/Cramouchegit/Certificate"
+            class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
+            >Certificate Saya
+          </a>
+          <a
+            href="https://linkedin-bio-dev.vercel.app/"
+            class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
+            >Bikin Bio Linkedin
+          </a>
+          <a
+            href="https://linkedin-bio-dev.vercel.app/"
+            class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
+            >Bikin Bio Linkedin
+          </a>
+          <a
+            href="https://aigroq-mabuchi.vercel.app/"
+            class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
+            >Tanyakan Pada Ai Mabuchi disini🙌
+          </a>
         </div>
       </div>
     </div>

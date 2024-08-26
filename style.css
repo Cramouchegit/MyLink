@@ -1,10 +1,11 @@
 body {
-  background: radial-gradient(
-    at left top,
-    rgb(245, 208, 254),
-    rgb(255, 255, 255),
-    rgb(167, 139, 250)
-  );
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .profile-image {
@@ -26,7 +27,7 @@ body {
   transition: 0.3s;
 }
 .social-logo:hover {
-  color: #4d6edd;
+  color: #007bff;
 }
 
 h6 {
@@ -50,4 +51,116 @@ h6 {
 
 .my-float {
   margin-top: 16px;
+}
+
+/* Card Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.spasi-kotak {
+  margin-left: 15px;
+}
+
+.spasi-kurawal {
+  margin-left: 30px;
+}
+
+.spasi {
+  margin-left: 45px;
+}
+
+.card {
+  max-width: 100%;
+  background-color: #161b22;
+  color: #c9d1d9;
+  border: 1px solid #58a6ff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.scrollable {
+  white-space: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-color: #007bff #161b22;
+}
+
+.comment {
+  color: #6a737d;
+}
+
+.string {
+  color: #032f62;
+}
+
+.function {
+  color: #005cc5;
+}
+
+.variable {
+  color: #e36209;
+}
+
+.number {
+  color: #2472cc;
+}
+
+.operator {
+  color: #24292e;
+}
+
+.error {
+  color: #b43a46;
+}
+
+.Dark-Orchid {
+  color: #9932cc;
+}
+.Light-Sky-Blue {
+  color: #87cefa;
+}
+
+.Medium-Sea-Green {
+  color: #48eb91;
+}
+
+.Dark-Turquoise-string {
+  color: #00ced1;
+}
+
+.Lavender {
+  color: #e6e6fa;
+}
+
+.Lavender-text-string {
+  color: #d8dbdd;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  color: #d8dbdd;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.705);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 }
