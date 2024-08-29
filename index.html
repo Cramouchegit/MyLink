@@ -63,6 +63,7 @@
     <link rel="icon" href="images/favicon.ico" />
   </head>
   <body>
+    <div id="tsparticles"></div>
     <a
       href="https://api.whatsapp.com/send?phone=6281295650808&text=Hallo, Selamat Siang"
       class="float"
@@ -87,7 +88,7 @@
             class="d-flex align-items-center justify-content-center gap-3 mt-3 mb-5"
           >
             <a
-              href="https://www.instagram.com/wanderrerss?igsh=MWl4N2VyNnNvaXd1Yw=="
+              href="https://www.instagram.com/wanderrerss/"
               class="social-logo"
             >
               <i class="bx bxl-instagram"></i>
@@ -98,7 +99,10 @@
             >
               <i class="bx bxl-linkedin"></i>
             </a>
-            <a href="#" class="social-logo">
+            <a
+              href="https://www.tiktok.com/@thiscramouche?_t=8pGWGHozJi8&_r=1"
+              class="social-logo"
+            >
               <i class="bx bxl-tiktok"></i>
             </a>
             <a href="https://github.com/Cramouchegit" class="social-logo">
@@ -138,7 +142,7 @@
                       >'Programming', <br />
                       'Gaming',<br />
                       'Eating',<br />
-                      'Basketball',<br
+                      'Listening music',<br
                     /></span>
 
                     <span class="comment">// 'Sleeping'</span> <br />
@@ -243,8 +247,8 @@
                     ><br /><br />
                     <span class="error">let</span>
                     <span class="Light-Sky-Blue">employer</span>
-                    <span class="Lavender">=</span> <span class="number">[</span
-                    ><br />
+                    <span class="Lavender">=</span>
+                    <span class="number">[</span><br />
                     <span class="comment">// Full time, Internship</span><br />
                     <span class="Lavender-text-string"
                       >'PT. Kredit Pintar Indonesia',</span
@@ -253,8 +257,8 @@
                     <span class="comment">// Most important skills</span><br />
                     <span class="error">let</span>
                     <span class="Light-Sky-Blue">languages</span>
-                    <span class="Lavender">=</span> <span class="number">[</span
-                    ><br />
+                    <span class="Lavender">=</span>
+                    <span class="number">[</span><br />
                     <span class="Lavender-text-string"
                       >'HTML5', 'CSS3', 'JavaScript', 'TypeScript',</span
                     ><br />
@@ -262,8 +266,8 @@
                     <span class="comment">// Frameworks</span><br />
                     <span class="error">let</span>
                     <span class="Light-Sky-Blue">frameworks</span>
-                    <span class="Lavender">=</span> <span class="number">[</span
-                    ><br />
+                    <span class="Lavender">=</span>
+                    <span class="number">[</span><br />
                     <span class="Lavender-text-string"
                       >'React', 'Next.Js', 'Tailwind CSS', 'Svelte',</span
                     ><br />
@@ -301,7 +305,7 @@
             Instagram</a
           >
           <a
-            href="https://github.com/Cramouchegit/website-store-mabuchi"
+            href="https://website-store-mabuchi.vercel.app/"
             class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
             >Toko Saya
             <span style="font-variant: small-caps">(Dummy data)</span></a
@@ -321,7 +325,11 @@
             class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
             >Bikin Twibbon
           </a>
-
+          <a
+            href="https://money-management-app-dev.vercel.app/"
+            class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
+            >Kelola keuangan kamu disini💸
+          </a>
           <a
             href="https://aigroq-mabuchi.vercel.app/"
             class="btn glassmorphism w-100 py-2 px-3 text-start mb-2"
@@ -330,7 +338,218 @@
         </div>
       </div>
     </div>
+
     <!-- bootstrap JS -->
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@3.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3.1.0"></script>
+    <script>
+      tsParticles.load({
+        id: "tsparticles",
+        options: {
+          autoPlay: true,
+          background: {
+            color: {
+              value: "transparent",
+            },
+            opacity: 1,
+          },
+          backgroundMask: {
+            composite: "destination-out",
+            cover: {
+              color: {
+                value: "#fff",
+              },
+              opacity: 1,
+            },
+            enable: false,
+          },
+          clear: true,
+          fullScreen: {
+            enable: true,
+            zIndex: -1,
+          },
+          detectRetina: true,
+          duration: 0,
+          fpsLimit: 120,
+          interactivity: {
+            detectsOn: "window",
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "grab",
+                parallax: {
+                  enable: true,
+                  force: 60,
+                  smooth: 10,
+                },
+              },
+              resize: {
+                delay: 0.5,
+                enable: true,
+              },
+            },
+            modes: {
+              trail: {
+                delay: 1,
+                pauseOnStop: false,
+                quantity: 1,
+              },
+              attract: {
+                distance: 200,
+                duration: 0.4,
+                easing: "ease-out-quad",
+                factor: 1,
+                maxSpeed: 50,
+                speed: 1,
+              },
+              bounce: {
+                distance: 200,
+              },
+              bubble: {
+                distance: 400,
+                duration: 2,
+                opacity: 0.8,
+                size: 40,
+              },
+              connect: {
+                distance: 80,
+                links: {
+                  opacity: 0.5,
+                },
+                radius: 60,
+              },
+              grab: {
+                distance: 400,
+                links: {
+                  opacity: 1,
+                },
+              },
+              push: {
+                default: true,
+                quantity: 4,
+              },
+              remove: {
+                quantity: 2,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+                factor: 100,
+                speed: 1,
+                maxSpeed: 50,
+                easing: "ease-out-quad",
+              },
+              slow: {
+                factor: 3,
+                radius: 200,
+              },
+              light: {
+                area: {
+                  gradient: {
+                    start: {
+                      value: "#ffffff",
+                    },
+                    stop: {
+                      value: "#000000",
+                    },
+                  },
+                  radius: 1000,
+                },
+                shadow: {
+                  color: {
+                    value: "#000000",
+                  },
+                  length: 2000,
+                },
+              },
+            },
+          },
+          particles: {
+            bounce: {
+              horizontal: {
+                value: 1,
+              },
+              vertical: {
+                value: 1,
+              },
+            },
+            collisions: {
+              enable: false,
+              maxSpeed: 50,
+              mode: "bounce",
+              overlap: {
+                enable: true,
+              },
+            },
+            color: {
+              value: "#ffffff",
+            },
+            move: {
+              angle: {
+                value: 90,
+              },
+              enable: true,
+              speed: 2,
+              outModes: {
+                default: "out",
+              },
+            },
+            number: {
+              density: {
+                enable: true,
+                width: 1920,
+                height: 1080,
+              },
+              value: 100,
+            },
+            opacity: {
+              value: {
+                min: 0.1,
+                max: 0.5,
+              },
+              animation: {
+                enable: true,
+                speed: 3,
+              },
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: {
+                min: 1,
+                max: 10,
+              },
+              animation: {
+                enable: true,
+                speed: 20,
+              },
+            },
+            links: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.4,
+              width: 1,
+            },
+          },
+          pauseOnBlur: true,
+          pauseOnOutsideViewport: true,
+          zLayers: 100,
+        },
+      });
+
+      // Control animation: Play and Pause
+      const particles = tsParticles.domItem(0);
+
+      // Uncomment to play or pause
+      particles.play();
+      particles.pause();
+    </script>
   </body>
 </html>
